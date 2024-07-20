@@ -1,0 +1,56 @@
+[
+    {
+        "channelID": 3,
+        "id": 69,
+        "title": "Einde werkdag",
+        "start_date": "06\/06\/2024",
+        "end_date": "25\/06\/2024",
+        "permalink": "http:\/\/localhost\/infowebv2\/event\/einde-werkdag\/",
+        "description": "<p>Einde werkdag!<\/p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 68,
+        "title": "Erik jarig",
+        "start_date": "24\/06\/2024",
+        "end_date": "07\/09\/2024",
+        "permalink": "http:\/\/localhost\/infowebv2\/event\/erik-jaris\/",
+        "description": "<p>bmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjh kbmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjh<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhk bmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhk\u00a0\u00a0<strong>bmbhjbhkljhkjhklhkjhkjhkjhk<\/strong><\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>vejpa<\/p>\n"
+    },
+    {
+        "channelID": 0,
+        "id": 71,
+        "title": "Werken.",
+        "start_date": "25\/06\/2024",
+        "end_date": "24\/06\/2024",
+        "permalink": "http:\/\/localhost\/infowebv2\/event\/werken\/",
+        "description": "<p>Werken.<\/p>\n"
+    },
+    {
+        "channelID": 2,
+        "id": 75,
+        "title": "eventData.json3",
+        "start_date": "27\/06\/2024",
+        "end_date": "",
+        "permalink": "http:\/\/localhost\/infowebv2\/event\/eventdata-json2\/",
+        "description": "<p>Dit is de extra inhoudsinformatie. Ik weet niet of deze meekomt daarom wordt dit stuk text geschreven. Komt de tekst mee in de array? we gaan het zo zien. Wat een spanning!<\/p>\n"
+    },
+    {
+        "channelID": 0,
+        "id": 70,
+        "title": "Begin vakantie",
+        "start_date": "28\/06\/2024",
+        "end_date": "30\/06\/2024",
+        "permalink": "http:\/\/localhost\/infowebv2\/event\/begin-vakantie\/",
+        "description": ""
+    },
+    {
+        "channelID": 0,
+        "id": 74,
+        "title": "eventdata.json",
+        "start_date": "29\/06\/2024",
+        "end_date": "",
+        "permalink": "http:\/\/localhost\/infowebv2\/event\/asdf\/",
+        "description": "<p>Dit is eventdata.json<\/p>\n"
+    }
+]

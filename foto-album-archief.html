@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="NL">
+<head>
+  <meta charset="UTF-8">
+  <title>Foto Album Archief</title>
+  <link rel="stylesheet" href="css/foto-albums.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="news">
+    <div class="container">
+      <div class="news__header">
+
+        <div class="news__titel">
+          <h1>Fotoalbum archief</h1>
+        </div>
+
+        <form id="filter-form">
+          <select id="locatie" name="locatie" class="dropdownFotoAlbum">
+            <option value="">Locatie</option>
+          </select>
+
+          <select id="jaar" name="jaar" class="dropdownFotoAlbum">
+            <option value="">Jaar</option>
+          </select>
+
+          <select id="categorie" name="categorie" class="dropdownFotoAlbum">
+            <option value="">Categorie</option>
+          </select>
+
+          <input type="submit" id="filter-submit" value="Filteren" class="btn btn-small btn--orange">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="filter-results"></div>
+
+  <div id="detailPopup" class="popup"></div> 
+
+  <script src="js/foto-album-archief.js"></script>
+</body>
+</html>
