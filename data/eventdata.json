@@ -52,5 +52,14 @@
         "end_date": "",
         "permalink": "http:\/\/localhost\/infowebv2\/event\/asdf\/",
         "description": "<p>Dit is eventdata.json<\/p>\n"
+    },
+    {
+        "channelID": 1,
+        "id": 78,
+        "title": "nieuw evenement",
+        "start_date": "20\/07\/2024",
+        "end_date": "30\/07\/2024",
+        "permalink": "http:\/\/localhost\/infowebv2\/event\/asdf\/",
+        "description": "<p>Diteen neiuwe evenement<\/p>\n"
     }
 ]
