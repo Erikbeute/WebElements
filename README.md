@@ -22,7 +22,7 @@ Chained Selectors: The second and third selectors update based on the first sele
 Dynamic Data Display: Events are dynamically displayed based on the selected filters.
 JSON Input: Accepts JSON input for event data.
 
-## Usage
+### Usage
 JSON Input: Ensure your JSON data is structured correctly to populate the selectors and events.
 Selectors: Use the selectors to filter events based on the criteria.
 
@@ -58,10 +58,6 @@ Example JSON Structure
     ]
 }
 
-## Running the Applications
-Start XAMPP: Ensure Apache is running in the XAMPP Control Panel.
-Access the Calendar: Navigate to localhost/path/to/php/calendar in your web browser.
-Access the Event Data Overview: Navigate to localhost/path/to/HTML/event-data in your web browser.
 
 
 
