@@ -17,7 +17,7 @@ The calendar component provides a traditional calendar interface that accepts JS
 
 The event data overview component provides a selector-based interface for filtering and displaying events. The selectors influence each other, making it easier to search and filter large sets of data.
 
-## Features
+### Features
 Chained Selectors: The second and third selectors update based on the first selector's choice.
 Dynamic Data Display: Events are dynamically displayed based on the selected filters.
 JSON Input: Accepts JSON input for event data.
