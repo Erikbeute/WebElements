@@ -3,7 +3,7 @@
         "id": 126,
         "title": "Sportevenement Breda",
         "permalink": "http://localhost/Repo/event/sportevenement-breda",
-        "albumhoesfoto": "img/PierBreda.webp",
+        "albumhoesfoto": "../img/PierBreda.webp",
         "locatie-event": "Breda",
         "year": "2022",
         "category": ["Sport evenement", "Wedstrijd"]
@@ -12,7 +12,7 @@
         "id": 120,
         "title": "Concert Amsterdam",
         "permalink": "http://localhost/Repo/event/slayer-amsterdam",
-        "albumhoesfoto": "img/SlayerAmsterdam.jpg",
+        "albumhoesfoto": "../img/SlayerAmsterdam.jpg",
         "locatie-event": "Amsterdam",
         "year": "2015",
         "category": ["Overig"]
@@ -21,9 +21,36 @@
         "id": 130,
         "title": "Boks Evenement",
         "permalink": "http://localhost/Repo/event/boksen-evenement",
-        "albumhoesfoto": "img/BoksenEvenement.jpeg",
+        "albumhoesfoto": "../img/BoksenEvenement.jpeg",
         "locatie-event": "Rotterdam",
         "year": "2023",
+        "category": ["Sport evenement", "Boksen"]
+    },
+    {
+        "id": 131,
+        "title": "Voetbaltoernooi Breda",
+        "permalink": "http://localhost/Repo/event/voetbaltoernooi-breda",
+        "albumhoesfoto": "../img/voetbalfoto.jpg",
+        "locatie-event": "Breda",
+        "year": "2023",
+        "category": ["Sport evenement", "Wedstrijd"]
+    },
+    {
+        "id": 132,
+        "title": "Jazz Concert Amsterdam",
+        "permalink": "http://localhost/Repo/event/jazz-concert-amsterdam",
+        "albumhoesfoto": "../img/jazzphoto.jpeg",
+        "locatie-event": "Amsterdam",
+        "year": "2020",
+        "category": ["Overig"]
+    },
+    {
+        "id": 133,
+        "title": "Kickboksen Evenement",
+        "permalink": "http://localhost/Repo/event/kickboksen-evenement",
+        "albumhoesfoto": "../img/kickboxphoto.jpeg",
+        "locatie-event": "Rotterdam",
+        "year": "2020",
         "category": ["Sport evenement", "Boksen"]
     }
 ]

@@ -1,10 +1,12 @@
 let posts = [];
 
 const months = [
-    "Januari", "Februari", "Maart", "April", "Mei", "Juni",
-    "Juli", "Augustus", "September", "Oktober", "November", "December"
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
 ];
 
+
+// Thanks to ..(i'm so sorry i forgot) ? for making this JS framework -calendar
 const getPrevMonth = (date) => {
     const copy = new Date(date.getTime());
     return new Date(copy.setMonth(date.getMonth() - 1, 1));
@@ -246,6 +248,7 @@ const config = {
     },
     useMilitaryTime: false
 };
+// ... Thanks! (..dev i can't mention becaus i forgot.) I'll take it from here... // 
 
 function showDetails(postId) {
   const post = posts.find(p => p.id === parseInt(postId.replace('post-', '')));

@@ -1,56 +1,317 @@
 [
     {
-        "channelID": 3,
-        "id": 69,
-        "title": "Einde werkdag",
-        "start_date": "06\/06\/2024",
-        "end_date": "25\/06\/2024",
-        "permalink": "http:\/\/localhost\/infowebv2\/event\/einde-werkdag\/",
-        "description": "<p>Einde werkdag!<\/p>\n"
-    },
-    {
-        "channelID": 5,
-        "id": 68,
-        "title": "Erik jarig",
-        "start_date": "24\/06\/2024",
-        "end_date": "07\/09\/2024",
-        "permalink": "http:\/\/localhost\/infowebv2\/event\/erik-jaris\/",
-        "description": "<p>bmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjh kbmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjh<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhk bmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhkbmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhk\u00a0\u00a0<strong>bmbhjbhkljhkjhklhkjhkjhkjhk<\/strong><\/p>\n<p>bmbhjbhkljhkjhklhkjhkjhkjhk<\/p>\n<p>vejpa<\/p>\n"
-    },
-    {
-        "channelID": 0,
-        "id": 71,
-        "title": "Werken.",
-        "start_date": "25\/06\/2024",
-        "end_date": "24\/06\/2024",
-        "permalink": "http:\/\/localhost\/infowebv2\/event\/werken\/",
-        "description": "<p>Werken.<\/p>\n"
+        "channelID": 1,
+        "id": 101,
+        "title": "Annual Meeting",
+        "start_date": "12/08/2024",
+        "end_date": "12/08/2024",
+        "permalink": "http://localhost/infowebv2/event/annual-meeting/",
+        "description": "<p>Join us for the annual meeting of Global Solutions.</p>\n"
     },
     {
         "channelID": 2,
-        "id": 75,
-        "title": "eventData.json3",
-        "start_date": "27\/06\/2024",
-        "end_date": "",
-        "permalink": "http:\/\/localhost\/infowebv2\/event\/eventdata-json2\/",
-        "description": "<p>Dit is de extra inhoudsinformatie. Ik weet niet of deze meekomt daarom wordt dit stuk text geschreven. Komt de tekst mee in de array? we gaan het zo zien. Wat een spanning!<\/p>\n"
+        "id": 102,
+        "title": "Tech Conference",
+        "start_date": "15/08/2024",
+        "end_date": "17/08/2024",
+        "permalink": "http://localhost/infowebv2/event/tech-conference/",
+        "description": "<p>Attend the latest Tech Conference hosted by Events Prime.</p>\n"
     },
     {
-        "channelID": 0,
-        "id": 70,
-        "title": "Begin vakantie",
-        "start_date": "28\/06\/2024",
-        "end_date": "30\/06\/2024",
-        "permalink": "http:\/\/localhost\/infowebv2\/event\/begin-vakantie\/",
-        "description": ""
+        "channelID": 3,
+        "id": 103,
+        "title": "Workshop on Innovation",
+        "start_date": "20/08/2024",
+        "end_date": "20/08/2024",
+        "permalink": "http://localhost/infowebv2/event/workshop-innovation/",
+        "description": "<p>One-day workshop on innovation and creativity at Events Innovate.</p>\n"
     },
     {
-        "channelID": 0,
-        "id": 74,
-        "title": "eventdata.json",
-        "start_date": "29\/06\/2024",
-        "end_date": "",
-        "permalink": "http:\/\/localhost\/infowebv2\/event\/asdf\/",
-        "description": "<p>Dit is eventdata.json<\/p>\n"
+        "channelID": 4,
+        "id": 104,
+        "title": "Summer Festival",
+        "start_date": "22/08/2024",
+        "end_date": "24/08/2024",
+        "permalink": "http://localhost/infowebv2/event/summer-festival/",
+        "description": "<p>Enjoy the Summer Festival with lots of activities and fun at Events Alpha.</p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 105,
+        "title": "Product Launch",
+        "start_date": "01/09/2024",
+        "end_date": "01/09/2024",
+        "permalink": "http://localhost/infowebv2/event/product-launch/",
+        "description": "<p>Attend the launch of our new product line at Events Horizon.</p>\n"
+    },
+    {
+        "channelID": 1,
+        "id": 106,
+        "title": "Networking Event",
+        "start_date": "05/09/2024",
+        "end_date": "05/09/2024",
+        "permalink": "http://localhost/infowebv2/event/networking-event/",
+        "description": "<p>Join us for an evening of networking and opportunities at Global Solutions.</p>\n"
+    },
+    {
+        "channelID": 3,
+        "id": 107,
+        "title": "Training Session",
+        "start_date": "10/09/2024",
+        "end_date": "11/09/2024",
+        "permalink": "http://localhost/infowebv2/event/training-session/",
+        "description": "<p>Participate in a two-day training session at Events Innovate.</p>\n"
+    },
+    {
+        "channelID": 2,
+        "id": 108,
+        "title": "Autumn Gala",
+        "start_date": "15/09/2024",
+        "end_date": "15/09/2024",
+        "permalink": "http://localhost/infowebv2/event/autumn-gala/",
+        "description": "<p>Celebrate the autumn season with a gala at Events Prime.</p>\n"
+    },
+    {
+        "channelID": 4,
+        "id": 109,
+        "title": "Tech Expo",
+        "start_date": "20/10/2024",
+        "end_date": "22/10/2024",
+        "permalink": "http://localhost/infowebv2/event/tech-expo/",
+        "description": "<p>Explore the latest in technology at the Tech Expo by Events Alpha.</p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 110,
+        "title": "Health and Wellness Fair",
+        "start_date": "25/10/2024",
+        "end_date": "25/10/2024",
+        "permalink": "http://localhost/infowebv2/event/health-wellness-fair/",
+        "description": "<p>Join us for a day focused on health and wellness at Events Horizon.</p>\n"
+    },
+    {
+        "channelID": 1,
+        "id": 111,
+        "title": "Global Summit",
+        "start_date": "30/10/2024",
+        "end_date": "31/10/2024",
+        "permalink": "http://localhost/infowebv2/event/global-summit/",
+        "description": "<p>Participate in the Global Summit for discussions and insights at Global Solutions.</p>\n"
+    },
+    {
+        "channelID": 2,
+        "id": 112,
+        "title": "Corporate Training",
+        "start_date": "05/11/2024",
+        "end_date": "06/11/2024",
+        "permalink": "http://localhost/infowebv2/event/corporate-training/",
+        "description": "<p>Enhance your skills with corporate training sessions by Events Prime.</p>\n"
+    },
+    {
+        "channelID": 3,
+        "id": 113,
+        "title": "Innovation Awards",
+        "start_date": "10/11/2024",
+        "end_date": "10/11/2024",
+        "permalink": "http://localhost/infowebv2/event/innovation-awards/",
+        "description": "<p>Recognize the best in innovation at the Awards hosted by Events Innovate.</p>\n"
+    },
+    {
+        "channelID": 4,
+        "id": 114,
+        "title": "Business Seminar",
+        "start_date": "15/11/2024",
+        "end_date": "15/11/2024",
+        "permalink": "http://localhost/infowebv2/event/business-seminar/",
+        "description": "<p>Attend a seminar focused on business growth at Events Alpha.</p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 115,
+        "title": "Holiday Party",
+        "start_date": "20/12/2024",
+        "end_date": "20/12/2024",
+        "permalink": "http://localhost/infowebv2/event/holiday-party/",
+        "description": "<p>Celebrate the holiday season with a party at Events Horizon.</p>\n"
+    },
+    {
+        "channelID": 1,
+        "id": 116,
+        "title": "Year-End Review",
+        "start_date": "27/12/2024",
+        "end_date": "27/12/2024",
+        "permalink": "http://localhost/infowebv2/event/year-end-review/",
+        "description": "<p>Join us for a year-end review and future planning session at Global Solutions.</p>\n"
+    },
+    {
+        "channelID": 2,
+        "id": 117,
+        "title": "Winter Workshop",
+        "start_date": "05/01/2025",
+        "end_date": "06/01/2025",
+        "permalink": "http://localhost/infowebv2/event/winter-workshop/",
+        "description": "<p>Kickstart the new year with a winter workshop at Events Prime.</p>\n"
+    },
+    {
+        "channelID": 3,
+        "id": 118,
+        "title": "Leadership Conference",
+        "start_date": "10/01/2025",
+        "end_date": "12/01/2025",
+        "permalink": "http://localhost/infowebv2/event/leadership-conference/",
+        "description": "<p>Develop your leadership skills at the Leadership Conference by Events Innovate.</p>\n"
+    },
+    {
+        "channelID": 4,
+        "id": 119,
+        "title": "Strategy Session",
+        "start_date": "15/01/2025",
+        "end_date": "15/01/2025",
+        "permalink": "http://localhost/infowebv2/event/strategy-session/",
+        "description": "<p>Plan your strategies for the year ahead with Events Alpha.</p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 120,
+        "title": "New Year Celebration",
+        "start_date": "20/01/2025",
+        "end_date": "20/01/2025",
+        "permalink": "http://localhost/infowebv2/event/new-year-celebration/",
+        "description": "<p>Celebrate the new year with fun and excitement at Events Horizon.</p>\n"
+    },
+    {
+        "channelID": 1,
+        "id": 121,
+        "title": "Spring Conference",
+        "start_date": "05/02/2025",
+        "end_date": "07/02/2025",
+        "permalink": "http://localhost/infowebv2/event/spring-conference/",
+        "description": "<p>Join us for the Spring Conference at Global Solutions.</p>\n"
+    },
+    {
+        "channelID": 2,
+        "id": 122,
+        "title": "Marketing Workshop",
+        "start_date": "10/02/2025",
+        "end_date": "11/02/2025",
+        "permalink": "http://localhost/infowebv2/event/marketing-workshop/",
+        "description": "<p>Enhance your marketing skills at the workshop by Events Prime.</p>\n"
+    },
+    {
+        "channelID": 3,
+        "id": 123,
+        "title": "Creative Expo",
+        "start_date": "15/02/2025",
+        "end_date": "17/02/2025",
+        "permalink": "http://localhost/infowebv2/event/creative-expo/",
+        "description": "<p>Discover the latest in creativity at the Creative Expo hosted by Events Innovate.</p>\n"
+    },
+    {
+        "channelID": 4,
+        "id": 124,
+        "title": "Financial Planning Seminar",
+        "start_date": "20/02/2025",
+        "end_date": "20/02/2025",
+        "permalink": "http://localhost/infowebv2/event/financial-planning-seminar/",
+        "description": "<p>Plan your finances with insights from experts at Events Alpha.</p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 125,
+        "title": "Cultural Festival",
+        "start_date": "25/03/2025",
+        "end_date": "27/03/2025",
+        "permalink": "http://localhost/infowebv2/event/cultural-festival/",
+        "description": "<p>Experience diverse cultures at the Cultural Festival by Events Horizon.</p>\n"
+    },
+    {
+        "channelID": 1,
+        "id": 126,
+        "title": "Industry Summit",
+        "start_date": "30/03/2025",
+        "end_date": "31/03/2025",
+        "permalink": "http://localhost/infowebv2/event/industry-summit/",
+        "description": "<p>Join industry leaders for discussions and networking at Global Solutions.</p>\n"
+    },
+    {
+        "channelID": 2,
+        "id": 127,
+        "title": "Productivity Workshop",
+        "start_date": "05/04/2025",
+        "end_date": "06/04/2025",
+        "permalink": "http://localhost/infowebv2/event/productivity-workshop/",
+        "description": "<p>Improve your productivity with tips and strategies at Events Prime.</p>\n"
+    },
+    {
+        "channelID": 3,
+        "id": 128,
+        "title": "Green Energy Conference",
+        "start_date": "10/04/2025",
+        "end_date": "12/04/2025",
+        "permalink": "http://localhost/infowebv2/event/green-energy-conference/",
+        "description": "<p>Learn about the latest in green energy at the conference by Events Innovate.</p>\n"
+    },
+    {
+        "channelID": 4,
+        "id": 129,
+        "title": "Team Building Retreat",
+        "start_date": "15/04/2025",
+        "end_date": "17/04/2025",
+        "permalink": "http://localhost/infowebv2/event/team-building-retreat/",
+        "description": "<p>Enhance team dynamics at the retreat hosted by Events Alpha.</p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 130,
+        "title": "Future of Work Forum",
+        "start_date": "20/04/2025",
+        "end_date": "20/04/2025",
+        "permalink": "http://localhost/infowebv2/event/future-of-work-forum/",
+        "description": "<p>Discuss the future of work and trends at Events Horizon.</p>\n"
+    },
+    {
+        "channelID": 1,
+        "id": 131,
+        "title": "Tech Innovations Seminar",
+        "start_date": "05/05/2025",
+        "end_date": "07/05/2025",
+        "permalink": "http://localhost/infowebv2/event/tech-innovations-seminar/",
+        "description": "<p>Explore the latest tech innovations at Global Solutions.</p>\n"
+    },
+    {
+        "channelID": 2,
+        "id": 132,
+        "title": "Digital Marketing Expo",
+        "start_date": "10/05/2025",
+        "end_date": "12/05/2025",
+        "permalink": "http://localhost/infowebv2/event/digital-marketing-expo/",
+        "description": "<p>Discover trends and strategies in digital marketing at Events Prime.</p>\n"
+    },
+    {
+        "channelID": 3,
+        "id": 133,
+        "title": "Sustainability Workshop",
+        "start_date": "15/05/2025",
+        "end_date": "16/05/2025",
+        "permalink": "http://localhost/infowebv2/event/sustainability-workshop/",
+        "description": "<p>Learn about sustainability practices at the workshop by Events Innovate.</p>\n"
+    },
+    {
+        "channelID": 4,
+        "id": 134,
+        "title": "Business Growth Seminar",
+        "start_date": "20/05/2025",
+        "end_date": "20/05/2025",
+        "permalink": "http://localhost/infowebv2/event/business-growth-seminar/",
+        "description": "<p>Get insights on business growth strategies at Events Alpha.</p>\n"
+    },
+    {
+        "channelID": 5,
+        "id": 135,
+        "title": "Customer Experience Conference",
+        "start_date": "25/05/2025",
+        "end_date": "27/05/2025",
+        "permalink": "http://localhost/infowebv2/event/customer-experience-conference/",
+        "description": "<p>Enhance your customer experience strategies at Events Horizon.</p>\n"
     }
 ]
