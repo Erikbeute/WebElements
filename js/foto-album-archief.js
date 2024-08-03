@@ -1,52 +1,52 @@
-let data = [];
+let albumsData = [];
 
 console.log("JS gekoppeld");
 
-async function getData() {
-    const url = 'data/foto-data.json'; // Updated to load from the local JSON file
+async function fetchData() {
+    const apiUrl = '../data/foto-data.json'; // Easy changable 
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(apiUrl);
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
 
-        data = await response.json();
-        console.log(data);
+        albumsData = await response.json();
+        console.log(albumsData);
 
     } catch (error) {
         console.error(error.message);
     }
 }
 
-async function filterData() {
+async function filterAlbums() {
     console.log("called the filter..");
 
-    let selectedAlbumYear = document.getElementById("jaar").value.toLowerCase();
-    let selectedAlbumLocation = document.getElementById("locatie").value.toLowerCase();
-    let selectedAlbumCategory = document.getElementById("categorie").value.toLowerCase();
+    let selectedYear = document.getElementById("jaar").value.toLowerCase();
+    let selectedLocation = document.getElementById("locatie").value.toLowerCase();
+    let selectedCategory = document.getElementById("categorie").value.toLowerCase();
 
-    console.log(selectedAlbumLocation + " Selectedalbumlocation");
-    console.log(selectedAlbumYear);
-    console.log(selectedAlbumCategory);
+    console.log(selectedLocation + " selectedLocation");
+    console.log(selectedYear);
+    console.log(selectedCategory);
 
-    let filteredAlbums = data.filter(element => {
-        const elementYear = element.year ? element.year.toLowerCase() : "";   
-        const elementLocation = element["locatie-event"] ? element["locatie-event"].toLowerCase() : ""; 
-        const elementCategory = element.category ? element.category.map(cat => cat.toLowerCase()) : [];
+    let filteredAlbums = albumsData.filter(AlbumItem => {
+        const AlbumItemYear = AlbumItem.year ? AlbumItem.year.toLowerCase() : "";   
+        const AlbumItemLocation = AlbumItem["locatie-event"] ? AlbumItem["locatie-event"].toLowerCase() : ""; 
+        const AlbumItemCategories = AlbumItem.category ? AlbumItem.category.map(cat => cat.toLowerCase()) : [];
 
-        let matchYear = selectedAlbumYear === "" || elementYear.includes(selectedAlbumYear);
-        let matchLocation = selectedAlbumLocation === "" || elementLocation.includes(selectedAlbumLocation);
-        let matchCategory = selectedAlbumCategory === "" || elementCategory.includes(selectedAlbumCategory);
+        let matchYear = selectedYear === "" || AlbumItemYear.includes(selectedYear);
+        let matchLocation = selectedLocation === "" || AlbumItemLocation.includes(selectedLocation);
+        let matchCategory = selectedCategory === "" || AlbumItemCategories.includes(selectedCategory);
 
         return matchYear && matchLocation && matchCategory;
     });
 
     console.log(filteredAlbums);
-    displayData(filteredAlbums);
+    displayAlbums(filteredAlbums);
 }
 
-function displayData(filteredAlbums) {
+function displayAlbums(filteredAlbums) {
     const resultsContainer = document.getElementById("filter-results");
 
     resultsContainer.innerHTML = "";
@@ -60,30 +60,30 @@ function displayData(filteredAlbums) {
     row.className = "row";
 
     if (filteredAlbums.length > 0) {
-        filteredAlbums.forEach(album => {
+        filteredAlbums.forEach(AlbumItem => {
             const col = document.createElement("div");
             col.className = "col-xl-4 col-md-6";
 
             const card = document.createElement("div"); 
             card.className = "card"; 
-            card.onclick = () => showDetails(album);
+            card.onclick = () => showAlbumDetails(AlbumItem);
 
             const cardImage = document.createElement("div");
             cardImage.className = "card__image";
 
             const image = document.createElement("img"); 
-            image.src = album.albumhoesfoto;
+            image.src = AlbumItem.albumhoesfoto;
 
             const cardData = document.createElement("div"); 
             cardData.className = "card__data"; 
 
             const cardTitle = document.createElement("div");
             cardTitle.className = "card__title"; 
-            cardTitle.innerHTML = album.title.substring(0, 36); // text-overflow in CSS will handle the rest
+            cardTitle.innerHTML = AlbumItem.title.substring(0, 36); // text-overflow in CSS will handle the rest
 
             const cardContent = document.createElement("div");
             cardContent.className = "card__content"; 
-            cardContent.innerHTML = album.year; 
+            cardContent.innerHTML = AlbumItem.year; 
 
             card.appendChild(cardImage);
             cardImage.appendChild(image); 
@@ -105,16 +105,16 @@ function displayData(filteredAlbums) {
     }
 }
 
-function showDetails(album) {
+function showAlbumDetails(AlbumItem) {
     const detailPopup = document.getElementById('detailPopup');
     detailPopup.innerHTML = `
         <div class="popup-content">
             <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h2>${album.title}</h2>
-            <p><strong>Locatie:</strong> ${album["locatie-event"]}</p>
-            <p><strong>Jaar:</strong> ${album.year}</p>
-            <p><strong>Categorieën:</strong> ${album.category.join(', ')}</p>
-            <a href="${album.permalink}" target="_blank">Bekijk evenement</a>
+            <h2>${AlbumItem.title}</h2>
+            <p><strong>Locatie:</strong> ${AlbumItem["locatie-event"]}</p>
+            <p><strong>Jaar:</strong> ${AlbumItem.year}</p>
+            <p><strong>Categorieën:</strong> ${AlbumItem.category.join(', ')}</p>
+            <a href="${AlbumItem.permalink}" target="_blank">Bekijk evenement</a>
         </div>
     `;
     detailPopup.style.display = 'block';
@@ -125,22 +125,22 @@ function closePopup() {
     detailPopup.style.display = 'none';
 }
 
-var titles = [];
-var albumYears = [];
-var locations = [];
-var categories = [];
+var allTitles = [];
+var allYears = [];
+var allLocations = [];
+var allCategories = [];
 
 function getAllLocations() {
     $('#locatie').empty();
     $('#locatie').append('<option value="">Locatie</option>');
 
-    locations = [];
-    data.forEach(function(album) {
-        console.log(album["locatie-event"]); // Log the locatie-event property
-        if (album["locatie-event"]) {
-            const location = album["locatie-event"];
-            if (!locations.includes(location)) {
-                locations.push(location);
+    allLocations = [];
+    albumsData.forEach(function(AlbumItem) {
+        console.log(AlbumItem["locatie-event"]); // Log the locatie-event property
+        if (AlbumItem["locatie-event"]) {
+            const location = AlbumItem["locatie-event"];
+            if (!allLocations.includes(location)) {
+                allLocations.push(location);
                 $('#locatie').append('<option value="' + location + '">' + location + '</option>');
             }
         }
@@ -153,10 +153,10 @@ function updateYearDropdown(selectedLocation = "") {
     $('#jaar').empty();
     $('#jaar').append('<option value="">Jaar</option>');
 
-    data.forEach(function (album) {
-        if (selectedLocation === "" || (album["locatie-event"] && album["locatie-event"] === selectedLocation)) {
-            if (!filteredYears.includes(album.year)) {
-                filteredYears.push(album.year);
+    albumsData.forEach(function (AlbumItem) {
+        if (selectedLocation === "" || (AlbumItem["locatie-event"] && AlbumItem["locatie-event"] === selectedLocation)) {
+            if (!filteredYears.includes(AlbumItem.year)) {
+                filteredYears.push(AlbumItem.year);
             }
         }
     });
@@ -173,10 +173,10 @@ function updateCategoryDropdown(selectedLocation = "") {
     $('#categorie').empty();
     $('#categorie').append('<option value="">Categorie</option>');
 
-    data.forEach(function (album) { 
-        if (selectedLocation === "" || (album["locatie-event"] && album["locatie-event"] === selectedLocation)) {
-            if (album.category) {
-                album.category.forEach(function (category) {
+    albumsData.forEach(function (AlbumItem) { 
+        if (selectedLocation === "" || (AlbumItem["locatie-event"] && AlbumItem["locatie-event"] === selectedLocation)) {
+            if (AlbumItem.category) {
+                AlbumItem.category.forEach(function (category) {
                     if (!filteredCategories.includes(category)) {
                         filteredCategories.push(category);
                         $('#categorie').append('<option value="' + category + '">' + category + '</option>');
@@ -188,12 +188,12 @@ function updateCategoryDropdown(selectedLocation = "") {
 }
 
 $(document).ready(async function () {
-    await getData();
+    await fetchData();
 
     getAllLocations();
     updateCategoryDropdown();
     updateYearDropdown();
-    filterData();
+    filterAlbums();
 
     $('#locatie').change(function () {
         let selectedLocation = $(this).val();
@@ -210,6 +210,14 @@ $(document).ready(async function () {
 
     filterForm.submit(function (event) {
         event.preventDefault();
-        filterData();
+        filterAlbums();
     });
 });
+
+fetch('../data/eventdata.json')
+  .then(response => response.json())
+  .then(eventsData => {
+    posts = eventsData;
+    doStuff();  
+  })
+  .catch(error => console.error('Error loading events:', error));
