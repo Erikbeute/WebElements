@@ -1,4 +1,8 @@
 # WebElements
+
+Some older code i made as projects / additions for websites. 
+
+
 ## Overview
 This repository contains two main components: a calendar application and an event data overview system.
 The calendar component is implemented in PHP, while the event data overview is implemented in HTML and JavaScript.
